@@ -12,6 +12,6 @@ def connect_db():
 @app.route("/")
 def home():
     conn = connect_db()
-    return "Connected to DB!"
+    return "Connected to DB! - Perfect "
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
