@@ -1,36 +1,34 @@
 #  Basic Docker project
 
 ## **Project overview**
- * Basics of Docker by containerizing a simple web application.
+ * Simple app  with a database connection using Docker Compose , Flask + PostgreSQL
  
 ## **Prerequisites**
 
 * Python  3.13.1 (Flask 3.1.0) 
 * Docker version 27.5.1
+* psycopg 2.9.10
+ 
 
 ## **Project Structure**
 
 ```bash
-Containerized-Web-Application-Beginer/
+Multi-Container-Application-with-Docker-Compose/
 ├── app.py #   Flask  app
-├── Dockerfile # Dockerfile  to containerise the flask app
+├── docker-compose.yml
+├── Dockerfile # Dockerfile  to containerize the flask app
 ├── requirements.txt # Dependencies 
 ```
 ## **TODO**
 
 ### **Clone the repo**
 ```bash
-git clone  https://github.com/sekedoua/Containerized-Web-Application-Beginer.git
+git clone  https://github.com/sekedoua/Multi-Container-Application-with-Docker-Compose.git
 ```
 ### **Build & Run the Docker Image**
 ```bash
-cd Containerized-Web-Application-Beginer
-
-docker build -t flask-app ..
-```
-### **Run the container:**
-```bash
-docker run -p 5000:5000 flask-app
+cd Multi-Container-Application-with-Docker-Compose
+docker-compose up --build
 ```
 
 ### **Verify the Application:**
